@@ -1,13 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/pt-mono');
+@import url('https://fonts.cdnfonts.com/css/aref-ruqaa');
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-
 
 body{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #EDECE4;
     border: 10px solid #CBC6B9;
 }
@@ -90,8 +93,74 @@ span{
 }
 
 main > img {
-    width: 650px;
-    height: 750px;
+    width: 600px;
+    height: 700px;
 }
 
+section {
+    display: flex;
+    width: 1000px;
+    height: 800px;
+}
 
+.title-menu {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 51px;
+    padding-left: 10px;
+}
+
+.line {
+    width: 285px;
+    height: 2px;
+    background-color: black;
+}
+
+article > p, li > p {
+    font-size: 18px;
+    font-family: 'PT Mono', sans-serif;
+    color: black;
+    height: 18px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    color: #988c77;
+    font-family: 'Aref Ruqaa', sans-serif;
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+
+.main-menu > h3 {
+    font-size: 24px;
+    font-family: 'Aref Ruqaa', sans-serif;
+    padding-bottom: 26px;
+    padding-left: 50px;
+}
+
+menu {
+    display: flex;
+    align-items: flex-start;
+    height: 300px;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    margin-left: 60px;
+
+}
+
+menu > img {
+    padding-top: 50px;
+}
+
+img {
+   transition: transform 0.9s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
