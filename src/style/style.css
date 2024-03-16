@@ -11,8 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EDECE4;
-    border: 10px solid #CBC6B9;
+    background-color: #FFE7D9;
+    border: 10px solid #E4BDB1;
 }
 
 main {
@@ -47,8 +47,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    border-bottom: 2px solid #C99288;
+    border-right: 2px solid #C99288;
 }
 
 .text-location {
@@ -57,12 +57,16 @@ p {
     justify-content: center;
     width: 318px;
     height: 82px;
-    border-right: 2px solid black;
+    border-right: 2px solid #C99288;
 }
 
 .text-decoration {
-    color: #988C77;
+    color: #C99288;
     font-size: 18px;
+}
+
+.bars {
+    color: #C99288;
 }
 
 .hero-wrapper {
@@ -103,7 +107,7 @@ section {
 .line {
     width: 255px;
     height: 2px;
-    background-color: black;
+    background-color: #C99288;
 }
 
 .line-contact {
@@ -122,7 +126,7 @@ li {
     align-items: center;
     gap: 10px;
     list-style: none;
-    color: #988C77;
+    color: #923E37;
     font-family: 'Aref Ruqaa', sans-serif;
     font-size: 18px;
     padding-bottom: 12px;
@@ -131,7 +135,7 @@ li {
 .main-menu > h3 {
     font-size: 24px;
     font-family: 'Aref Ruqaa', sans-serif;
-    padding-bottom: 26px;
+    padding-bottom: 20px;
     padding-left: 50px;
 }
 
@@ -189,13 +193,13 @@ div > .column:last-child {
 
 input {
     height: 40px;
-    border: 3px solid #988C77;
+    border: 3px solid #C99288;
     background-color: transparent;
     width: 100%;
 }
 
 textarea {
-    border: 3px solid #988C77;
+    border: 3px solid #C99288;
     background-color: transparent;
 }
 
@@ -203,10 +207,10 @@ button {
     width: 200px;
     height: 40px;
     background-color: transparent;
-    border: 3px solid #988C77;
-    color: #988C77;
+    border: 3px solid #C99288;
+    color: #C99288;
     font-size: 18px;
-    box-shadow: 5px 5px 0px -2px #CBC6B9, 5px 5px 0px #988C77;
+    box-shadow: 5px 5px 0px -2px #CBC6B9, 5px 5px 0px #C99288;
 }
 
 label {
@@ -226,7 +230,7 @@ iframe {
 
 map {
     height: 226px;
-    box-shadow: 0px 0px 0px 10px #CBC6B9;
+    box-shadow: 0px 0px 0px 10px #C99288;
     margin-top: 60px;
 }
 
@@ -235,15 +239,25 @@ footer {
     justify-content: space-around;
     width: 100%;
     height: 70px;
-    background-color: #2A2426;
-    color: #EDECE4;
+    background-color: #AC635B;
+    color: #AC635B;
     font-size: 18px;
     align-items: center;
-    box-shadow: 0px 0px 0px 10px #2A2426;
+    box-shadow: 0px 0px 0px 10px #AC635B;
 }
 
-footer > p{
+footer > img {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > p {
     color: #EDECE4;
+}
+
+.title {
+    font-size: 12px;
+    font-family: 'Aref Ruqaa', sans-serif;
 }
 
 @media (max-width: 520px) {
@@ -308,8 +322,5 @@ footer > p{
         align-self: center;
     }
 
-    footer > img {
-        display: none;
-    }
 
 }
