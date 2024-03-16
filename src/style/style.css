@@ -1,13 +1,13 @@
 @import url('https://fonts.cdnfonts.com/css/pt-mono');
 @import url('https://fonts.cdnfonts.com/css/aref-ruqaa');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,46 +21,37 @@ main {
     width: 1000px;
     height: 800px;
     margin-top: 77px;
-    
-    
 }
 
-main > div {
-    background-color: #EDECE4;
-    width: 100%;
-}
-
-span{
+span {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.textDay {
+p {
     font-size: 18px;
     color: black;
 }
 
-
-.markerGreen {
+.marker-green {
     width: 12px;
     height: 12px;
     border-radius: 12px;
     background-color: green;
-} 
+}
 
-.textHours {
+.time-work {
     width: 318px;
     height: 82px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-right: 2px solid black;
     border-bottom: 2px solid black;
+    border-right: 2px solid black;
 }
 
-
-.textLocation {
+.text-location {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,26 +61,23 @@ span{
 }
 
 .text-decoration {
-    color: #988c77;
+    color: #988C77;
     font-size: 18px;
 }
 
-.textWrapper{
+.hero-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-
+    gap: 30px;
 }
 
-.textWrapper > img {
-  width: 200px;
-  height: 150px;  
-
+.hero-wrapper > img {
+    width: 200px;
+    height: 200px;
 }
 
-.textWrapper > h1 {
-  font-size: 200px;
- 
+.hero-wrapper > h1 {
+    font-size: 200px;
 }
 
 main > img {
@@ -100,8 +88,8 @@ main > img {
 section {
     display: flex;
     width: 1000px;
+    margin-bottom: 100px;
     gap: 60px;
-    margin-bottom: 120px;
 }
 
 .title-section {
@@ -119,14 +107,14 @@ section {
 }
 
 .line-contact {
-    width: 224px; ;
+    width: 224px;
 }
 
 article > p, li > p {
     font-size: 18px;
     font-family: 'PT Mono', sans-serif;
     color: black;
-    height: 18px;
+    height: 14px;
 }
 
 li {
@@ -134,7 +122,7 @@ li {
     align-items: center;
     gap: 10px;
     list-style: none;
-    color: #988c77;
+    color: #988C77;
     font-family: 'Aref Ruqaa', sans-serif;
     font-size: 18px;
     padding-bottom: 12px;
@@ -150,11 +138,10 @@ li {
 menu {
     display: flex;
     align-items: flex-start;
-    height: 300px;
-    justify-content: space-between;
+    justify-content: space-between;  
     gap: 30px;
     width: 100%;
-
+    height: 300px;
 }
 
 menu > img {
@@ -162,7 +149,7 @@ menu > img {
 }
 
 img {
-   transition: transform 0.9s;
+    transition: transform 0.9s;
 }
 
 img:hover {
@@ -178,7 +165,6 @@ form {
     width: 600px;
     display: flex;
     flex-direction: column;
-    
 }
 
 form > div {
@@ -189,7 +175,7 @@ form > div {
 
 div > .column {
     display: flex;
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 div > .column:last-child {
@@ -203,13 +189,13 @@ div > .column:last-child {
 
 input {
     height: 40px;
-    border: 2px solid#988c77;
+    border: 3px solid #988C77;
     background-color: transparent;
-    
+    width: 100%;
 }
 
 textarea {
-    border: 3px solid#988c77;
+    border: 3px solid #988C77;
     background-color: transparent;
 }
 
@@ -217,10 +203,10 @@ button {
     width: 200px;
     height: 40px;
     background-color: transparent;
-    border: 2px solid #988c77;
-    color: #988c77;
+    border: 3px solid #988C77;
+    color: #988C77;
     font-size: 18px;
-    box-shadow: 5px 5px 0px -2px #CBC6B9, 5px 5px 0px #988c77;
+    box-shadow: 5px 5px 0px -2px #CBC6B9, 5px 5px 0px #988C77;
 }
 
 label {
@@ -228,9 +214,9 @@ label {
 }
 
 form > div:last-child {
-    margin-top: 21px;
     display: flex;
     justify-content: space-between;
+    margin-top: 21px;
 }
 
 iframe {
@@ -244,14 +230,39 @@ map {
     margin-top: 60px;
 }
 
-.footer {
+footer {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #2A2426;    
+    background-color: #2A2426;
     color: #EDECE4;
     font-size: 18px;
-    box-shadow: 0px 0px 0px 10px;
+    align-items: center;
+    box-shadow: 0px 0px 0px 10px #2A2426;
+}
+
+@media (max-width: 520px) {
+
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    main > img {
+       display: none;
+    }
+
+    .hero-wrapper > img {
+        align-self: center;
+    }
+
+    .hero-wrapper :nth-child(4) {
+        font-size: 100px;
+    }
+
 }
