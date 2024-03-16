@@ -242,6 +242,10 @@ footer {
     box-shadow: 0px 0px 0px 10px #2A2426;
 }
 
+footer > p{
+    color: #EDECE4;
+}
+
 @media (max-width: 520px) {
 
 
@@ -269,6 +273,43 @@ footer {
         flex-direction: column;
         width: 100%;
         height: auto;
+    }
+    menu > img {
+        display: none;
+    }
+
+    menu {
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        gap: 80px;
+    }
+
+    .menu {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    form >:nth-child(3) {
+        flex-direction: column;
+        display: flex;
+    }
+
+    map {
+        width: 90%;
+        align-self: center;
+    }
+
+    footer > img {
+        display: none;
     }
 
 }
