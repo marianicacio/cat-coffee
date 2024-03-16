@@ -265,4 +265,10 @@ footer {
         font-size: 100px;
     }
 
+    section {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
 }
